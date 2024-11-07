@@ -18,10 +18,10 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;  /* Centraliza horizontalmente */
-            align-items: flex-start;  /* Alinha no topo */
+            justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+            align-items: flex-start;  /* Alinha o conteúdo no topo */
             flex-direction: column;
-            min-height: 100%;
+            min-height: 100vh; /* Garante que o corpo ocupe 100% da altura da tela */
         }
 
         @keyframes backgroundChange {
@@ -54,13 +54,13 @@
             word-wrap: break-word;
         }
 
-        /* Centraliza a imagem */
+        /* Centraliza a imagem no centro da tela */
         .minnie-image {
             width: 150px;  /* Aumenta 50% em relação ao tamanho original de 100px */
             margin-top: 20px;
-            display: block; /* Faz a imagem se comportar como um bloco */
-            margin-left: auto; /* Centraliza a imagem */
-            margin-right: auto; /* Centraliza a imagem */
+            display: block; /* Garante que a imagem se comporte como bloco */
+            margin-left: auto; /* Aplica margem automática à esquerda */
+            margin-right: auto; /* Aplica margem automática à direita */
         }
     </style>
 </head>
@@ -68,8 +68,8 @@
 <body>
     <h1>Bem-vindo à Festinha da Laura!</h1>
 
+    <!-- Centraliza a imagem dentro de seu contêiner -->
     <div>
-        <!-- A imagem agora será centralizada com display:block e margin-left & margin-right -->
         <img class="minnie-image" src="https://github.com/user-attachments/assets/3a1e38be-d433-484c-ad42-b03b952d1098"> 
     </div>
 
