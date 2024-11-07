@@ -19,8 +19,8 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* Alinha o conteúdo no topo */
+            min-height: 100vh; /* Permite que o conteúdo se expanda conforme necessário */
             flex-direction: column;
         }
 
@@ -41,6 +41,7 @@
         h1 {
             color: #FFB6C1;
             font-size: 2.5em;
+            margin-top: 20px; /* Dá um pequeno espaçamento no topo */
         }
 
         .story {
@@ -51,9 +52,8 @@
             text-align: center;
         }
 
-        /* Aplique a redução de 50% no tamanho da imagem */
         .minnie-image {
-            width: 150px;  /* 50% maior que o tamanho original de 100px */
+            width: 150px;  /* Aumento de 50% da largura original */
             margin-top: 20px;
         }
     </style>
@@ -64,7 +64,6 @@
 
     <!-- Verifique se a pasta "imagens" está na raiz do repositório do GitHub -->
     <div align="center">
-        <!-- Aplica a classe .minnie-image para ajustar o tamanho -->
         <img class="minnie-image" src="https://github.com/user-attachments/assets/3a1e38be-d433-484c-ad42-b03b952d1098"> 
     </div>
 
