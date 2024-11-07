@@ -11,10 +11,17 @@
     <style>
         body {
             font-family: 'Playwrite GB S', sans-serif;
-            background-color: #f8e0f7;
             color: #FFB6C1;
             text-align: center;
             animation: backgroundChange 10s infinite;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+            align-items: flex-start;  /* Alinha o conteúdo no topo */
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o corpo ocupe 100% da altura da tela */
+            background: linear-gradient(to bottom, #FFFFFF, #F8E0F7); /* Gradiente do branco para o rosa claro */
         }
 
         @keyframes backgroundChange {
@@ -34,18 +41,26 @@
         h1 {
             color: #FFB6C1;
             font-size: 2.5em;
+            margin-top: 20px;  /* Garante espaçamento no topo */
         }
 
         .story {
             font-size: 1.5em;
             margin: 20px;
             line-height: 1.5;
+            max-width: 800px;
+            text-align: center;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
 
-        /* Aplique a redução de 50% no tamanho da imagem */
+        /* Centraliza a imagem no centro da tela */
         .minnie-image {
-            width: 100px;  /* 50% do tamanho original (200px) */
+            width: 150px;  /* Aumenta 50% em relação ao tamanho original de 100px */
             margin-top: 20px;
+            display: block; /* Garante que a imagem se comporte como bloco */
+            margin-left: auto; /* Aplica margem automática à esquerda */
+            margin-right: auto; /* Aplica margem automática à direita */
         }
     </style>
 </head>
@@ -53,22 +68,20 @@
 <body>
     <h1>Bem-vindo à Festinha da Laura!</h1>
 
-    <!-- Verifique se a pasta "imagens" está na raiz do repositório do GitHub -->
-    <div align="center">
-        <!-- Aplica a classe .minnie-image para ajustar o tamanho -->
+    <!-- Centraliza a imagem dentro de seu contêiner -->
+    <div>
         <img class="minnie-image" src="https://github.com/user-attachments/assets/3a1e38be-d433-484c-ad42-b03b952d1098"> 
     </div>
 
     <div class="story">
-        Oi amiguinhos e família,<br><br>
-        Estou muito animada para celebrar o meu segundo aniversário com todos vocês! Como sabem, essa data é muito especial para mim, e quero torná-la ainda mais especial. Este ano, além da minha festinha cheia de alegria e diversão, tenho um pedido especial.<br><br>
-        No ano que vem, eu, o meu papai e a minha mamãe estaremos nos mudando para um lugar muito, muito, muito longe, mas também muito bonito, e lá se chama Itália. E neste meu aniversári ao invés de ganhar presentes, eu gostaria de pedir carinhosamento, se possível, ajudar o papai e mamãe a custear o meu passaporte e a minha passagem. Qualquer ajuda será muito bem vinda, não importa o valor.<br>
-        Agradecemos de coração pelo carinho e apoio que vocês sempre nos deram. Estamos ansiosos para celebrar juntos e, quem sabe, compartilhar um pouco dessa nova aventura em família com todos vocês no futuro!<br><br>
-        <br>Eu amo cada um de vocês, muito obrigada por estar aqui comigo hoje.<br>
-        <br> Com amor,<br>
-        <br>Laura, Papai e Mamãe<br>
-
-    <br>PIX: 157.500.217-50 - Brenda Santos do Nascimento
+        Queridos amigos e familiares,<br><br>
+        Estamos muito animados para celebrar o segundo aniversário da nossa pequena Laura! Como vocês sabem, essa data é muito especial para nós, e queremos torná-la ainda mais inesquecível. Este ano, além da festa cheia de alegria e diversão, temos um pedido especial.<br><br>
+        Em vez de presentes físicos, gostaríamos de solicitar, se possível, uma contribuição para ajudar a realizar o nosso sonho: levar a Laura para conhecer e viver na Itália! Este é um sonho muito antes da nossa pequena vim ao mundo, e que hoje está prestes a se tornar realidade. Essa experiência será não apenas uma oportunidade de conhecer novas culturas, mas também um jeito de criar memórias incríveis em família.<br><br>
+        A Itália é um país rico em história, lá poderemos dar uma melhor qualidade de vida para nossa pequena e o estudo que tanto sonhamos em proporcionar a ela, e queremos que Laura possa explorar um pouco desse mundo. Cada contribuição, por menor que seja, fará uma grande diferença e nos ajudará a alcançar esse objetivo.<br><br>
+        Agradecemos de coração pelo carinho e apoio que vocês sempre nos deram. Estamos ansiosos para celebrar juntos e, quem sabe, compartilhar um pouco dessa nova aventura em família com todos vocês no futuro!<br>
+        Nosso pix para contribuição é: 157.500.217-50 (CPF - Brenda Santos do Nascimento)<br><br>
+        Com amor,<br>
+        Papai, Mamãe e Laura
     </div>
 </body>
 
